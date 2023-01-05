@@ -1,0 +1,420 @@
+/* header css */
+
+* {
+    margin: 0px;
+}
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.menu {
+    margin-left: 86vh;
+}
+
+.menu-1 {
+    display: flex;
+}
+
+.phone-no {
+    display: flex;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+.phone-no-logo {
+    margin-right: 7px;
+}
+
+.login {
+    display: flex;
+}
+
+.login-logo {
+    margin-top: 15px;
+}
+
+.login-content a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.image img {
+    height: 63vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.header {
+    position: sticky;
+}
+
+.logo {
+    margin-top: -42px;
+    margin-bottom: -52px;
+    width: 43%;
+}
+
+
+/* Add a black background color to the top navigation */
+
+.topnav {
+    background-color: #4a45c547;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    align-content: flex-end;
+    flex-wrap: wrap;
+}
+
+
+/* Style the links inside the navigation bar */
+
+.menu a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+/* Change the color of links on hover */
+
+.menu a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+/* Add an active class to highlight the current page */
+
+.topnav a.active {
+    background-color: #4945c5;
+    color: white;
+}
+
+
+/* Hide the link that should open and close the topnav on small screens */
+
+.topnav .icon {
+    display: none;
+}
+
+
+/* contact us css */
+
+* {
+    margin: 0;
+}
+
+.banner img {
+    width: 100%;
+    height: 39vh;
+}
+
+.box {
+    margin-top: 36px;
+    margin-left: 55px;
+    margin-right: 59px;
+    display: flex;
+}
+
+.box-1 {
+    box-shadow: 0px 0px 10px #ccc;
+    display: flex;
+    width: 100%;
+    background-color: wheat;
+}
+
+.box-2 {
+    margin-top: 37px;
+}
+
+.box-4 {
+    margin-left: 52px;
+    /* background-color: #ccc; */
+}
+
+.header1 {
+    margin-top: 28px;
+    margin-left: 56px;
+    margin-bottom: 22px;
+    color: darkblue;
+}
+
+.imageSection img {
+    height: 32vh;
+    border: 1px solid;
+    margin-top: 4vh;
+    margin-left: 3vh;
+}
+
+.imgSec img {
+    border: 2px solid #ccc;
+    margin-left: 25px;
+    margin-top: 20px;
+    margin-bottom: 215px;
+    margin-right: 20px;
+    height: 42vh;
+}
+
+.imgSec {
+    margin-bottom: -186px;
+}
+
+.locationSec {
+    border: #ccc 1px solid;
+}
+
+.imageSec1 img {
+    height: 30px;
+    margin-top: -17px;
+    margin-left: -15px;
+}
+
+.conSec {
+    margin-top: -30px;
+    margin-left: 12px;
+}
+
+.header-a {
+    margin-top: 9px;
+    color: darkblue;
+    margin-right: 14px;
+    font-size: 24px;
+    margin-left: -2px;
+}
+
+.para {
+    margin-left: 10px;
+    font-size: 20px;
+    font-size: 16px;
+}
+
+.phnIconSec img {
+    height: 30px;
+    margin-top: 50px;
+    margin-left: -14px;
+}
+
+.phnConSec {
+    margin-left: 24px;
+    margin-top: -27px;
+}
+
+.tollimg img {
+    height: 22vh;
+    margin-top: 55px;
+    margin-left: 48px;
+}
+
+.tollContent {
+    margin-left: 75px;
+}
+
+.emailicon img {
+    height: 17vh;
+    margin-top: 72px;
+    margin-left: 48px;
+}
+
+.emailcon {
+    margin-left: 75px;
+    margin-top: 15px;
+}
+
+.conSection {
+    margin-right: 16px;
+}
+
+
+/* regional offices */
+
+.regionalSec {
+    display: flex;
+}
+
+.box-6 {
+    display: flex;
+    box-shadow: 0px 0px 10px #ccc;
+    margin-left: 8vh;
+    margin-right: 108vh;
+    margin-bottom: 37px;
+    height: 40vh;
+    background-color: beige;
+}
+
+.secImage img {
+    margin-top: 23px;
+    margin-left: 2px;
+    height: 5vh
+}
+
+.secCon {
+    margin-left: 5vh;
+    margin-top: -30px
+}
+
+.header2 {
+    font-size: 19px;
+    margin-left: 14px;
+    color: darkblue;
+}
+
+.para1 {
+    margin-left: 13px;
+}
+
+.phoneIconSec img {
+    height: 30px;
+    margin-top: 50px;
+    margin-left: 4px;
+}
+
+.phoneConSec {
+    margin-left: 36px;
+    margin-top: -28px
+}
+
+.box-7 {
+    display: flex;
+    margin-left: -100vh;
+    box-shadow: 0px 0px 10px #ccc;
+    margin-bottom: 10vh;
+    background-color: beige;
+}
+
+.secImage-7 img {
+    margin-top: 23px;
+    margin-left: 2px;
+    height: 5vh
+}
+
+.secCon-7 {
+    margin-left: 5vh;
+    margin-top: -30px
+}
+
+.header7 {
+    font-size: 19px;
+    margin-left: 14px;
+    color: darkblue;
+}
+
+.para7 {
+    margin-left: 13px;
+}
+
+.phoneIconSec-7 img {
+    height: 30px;
+    margin-top: 50px;
+    margin-left: 4px;
+}
+
+.phoneConSec-7 {
+    margin-left: 36px;
+    margin-top: -28px
+}
+
+.imageSection-7 img {
+    height: 32vh;
+    border: 1px solid;
+    margin-top: 4vh;
+    margin-left: 3vh;
+    margin-bottom: 3vh;
+}
+
+.conSection-7 {
+    margin-right: 16px;
+}
+
+
+/* regionalSec-2 */
+
+.regionalSec-2 {
+    display: flex;
+}
+
+
+/* footer */
+
+.footer-container {
+    background: #8c8c8c;
+}
+
+.footer-box-1 {
+    display: flex;
+}
+
+.footer-header {
+    font-size: 25px;
+    color: white;
+    padding: 12px 80px;
+}
+
+.footer-detail-1 a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-detail-1 {
+    margin-left: 40px;
+    font-size: 18px;
+    color: white;
+    padding: 7px 50px;
+}
+
+.social-media-icon {
+    display: flex;
+    margin-left: 79px;
+    font-size: 22px;
+    color: black;
+}
+
+.footer-social-media-icon-1:hover,
+.footer-social-media-icon-2:hover,
+.footer-social-media-icon-3:hover {
+    color: black;
+    font-size: 30px;
+}
+
+.footer-social-media-icon-1,
+.footer-social-media-icon-2,
+.footer-social-media-icon-3 {
+    margin-right: 18px;
+    transform: scale(1);
+    transition-duration: 1s;
+}
+
+.footerCon {
+    margin-left: 74px;
+    color: white;
+}
+
+.lastone {
+    background-color: black;
+    color: white;
+    height: 55px;
+}
+
+.last {
+    font-size: 20px;
+    margin-left: 79px;
+    margin-top: -23px;
+}
+
+.copywriteimg img {
+    height: 16px;
+    margin-left: 55px;
+    margin-top: 21px;
+}

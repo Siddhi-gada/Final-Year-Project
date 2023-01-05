@@ -1,0 +1,23 @@
+body{
+    background: #4292dc;
+    display: flex;
+    justify-content: center;
+}
+.title {
+    background: #f7f7f7;
+    width: 400px;
+    /* display: flex; */
+    justify-content: center;
+    text-align: center;
+    margin-top: 180px;
+    padding: 71px;
+    font-size: 34px;
+}
+.para{
+    font-size: 20px;
+    padding:10px 5px;
+}
+.para a{
+    color:white;
+    text-decoration: none;
+}

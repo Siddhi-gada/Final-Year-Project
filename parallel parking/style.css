@@ -1,0 +1,230 @@
+/* header css */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+    margin-left: 86vh;
+}
+
+.menu-1 {
+    display: flex;
+}
+
+.phone-no {
+    display: flex;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+.phone-no-logo {
+    margin-right: 7px;
+}
+
+.login {
+    display: flex;
+}
+
+.login-logo {
+    margin-top: 15px;
+}
+
+.login-content a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.image img {
+    height: 63vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.header {
+    position: sticky;
+}
+
+.logo {
+    margin-top: -42px;
+    margin-bottom: -52px;
+    width: 43%;
+}
+
+
+/* Add a black background color to the top navigation */
+
+.topnav {
+    background-color: #4a45c547;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    align-content: flex-end;
+    flex-wrap: wrap;
+}
+
+
+/* Style the links inside the navigation bar */
+
+.menu a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+/* Change the color of links on hover */
+
+.menu a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+/* Add an active class to highlight the current page */
+
+.topnav a.active {
+    background-color: #4945c5;
+    color: white;
+}
+
+
+/* Hide the link that should open and close the topnav on small screens */
+
+.topnav .icon {
+    display: none;
+}
+
+.title {
+    color: rgb(0 0 139);
+    font-size: 32px;
+    font-family: "amiri", serif;
+    font-family: "unna", serif;
+    margin-left: 9px;
+    padding-top: 30px;
+}
+
+.box {
+    border: 1px solid black;
+    height: 300vh;
+    width: 130vh;
+    box-sizing: border-box;
+    margin-left: 200px;
+    margin-top: 20px
+}
+
+.row {
+    display: flex;
+}
+
+.image1 {
+    width: 50px;
+    height: 42vh;
+    margin-top: 42px;
+}
+
+button {
+    height: 10vh;
+    width: 45vh;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 0;
+}
+
+p {
+    font-size: 20px;
+    margin-left: 10px;
+    font-family: "unna", serif;
+    text-align: justify;
+}
+
+.image3 {
+    height: 262px;
+}
+
+
+/* footer */
+
+.footer-container {
+    background: #8c8c8c;
+    margin-top: 40px;
+}
+
+.footer-box-1 {
+    display: flex;
+}
+
+.footer-header {
+    font-size: 25px;
+    color: white;
+    padding: 12px 80px;
+}
+
+.footer-detail-1 a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-detail-1 {
+    margin-left: 40px;
+    font-size: 17px;
+    color: white;
+    padding: 7px 50px;
+}
+
+.social-media-icon {
+    display: flex;
+    margin-left: 79px;
+    font-size: 22px;
+    color: black;
+}
+
+.footer-social-media-icon-1:hover,
+.footer-social-media-icon-2:hover,
+.footer-social-media-icon-3:hover {
+    color: black;
+    font-size: 30px;
+}
+
+.footer-social-media-icon-1,
+.footer-social-media-icon-2,
+.footer-social-media-icon-3 {
+    margin-right: 18px;
+    transform: scale(1);
+    transition-duration: 1s;
+}
+
+.footerCon {
+    margin-left: 10px;
+    font-family: "Unna", serif;
+    text-align: justify;
+}
+
+.lastone {
+    background-color: black;
+    color: white;
+    height: 55px;
+}
+
+.last {
+    font-size: 20px;
+    margin-left: 79px;
+    margin-top: -23px;
+}
+
+.copywriteimg img {
+    height: 16px;
+    margin-left: 55px;
+    margin-top: 21px;
+}

@@ -1,0 +1,23 @@
+.nav-bar{
+    margin-top: 20px;
+}
+
+
+
+.navbar-expand .navbar-nav .dropdown-menu {
+    position: absolute;
+    align-items: center;
+    margin-left: 957px;
+    margin-top: -20px;
+}
+.mb-0{
+    margin-top: 19px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -0.75rem;
+    margin-left: -0.75rem;
+    margin-top: -8px;
+    margin-bottom: 20px;
+}
