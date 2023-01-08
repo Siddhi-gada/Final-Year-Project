@@ -10116,11 +10116,11 @@ a:focus {
 }
 
 .rotate-15 {
-  transform: rotate(15deg);
+  transform: rotate(0deg);
 }
 
 .rotate-n-15 {
-  transform: rotate(-15deg);
+  transform: rotate(-1deg);
 }
 
 .dropdown .dropdown-menu {
