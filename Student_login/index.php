@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel='stylesheet' href="login.css" />
+<<<<<<< HEAD
     <title>Login</title>
+=======
+    <title>Student Login</title>
+>>>>>>> 515f1c4cf1e670d470462ddd829a246dbe1b455c
 
 </head>
 
