@@ -56,22 +56,33 @@
       alert("Work experience field is required");
       return false;
     }
-    // Address validation
-    var address = document.forms["registrationForm"]["address"].value;
-    if (address == "") {
-      alert("Address field is required");
+    var years = document.forms["registrationForm"]["years"].value;
+    if (years == "") {
+      alert("Work experience field is required");
       return false;
     }
-    // City validation
-    var city = document.forms["registrationForm"]["city"].value;
-    if (city == "") {
-      alert("City field is required");
+    var certification = document.forms["registrationForm"]["certification"].value;
+    if (certification == "") {
+      alert("Work experience field is required");
       return false;
     }
-    // State validation
-    var state = document.forms["registrationForm"]["state"].value;
-    if (state == "") {
-      alert("State field is required");
+    var certificate = document.forms["registrationForm"]["certificate"].value;
+    if (certificate == "") {
+      alert("Certificate field is required");
       return false;
     }
+    var profileimage = document.forms["registrationForm"]["profileimage"].value;
+    if (profileimage == "") {
+      alert("Profile Image field is required");
+      return false;
+    }
+}
+
+function toggleInput() {
+  var workExperienceInput = document.getElementById("workExperienceInput");
+  if (workExperienceInput.style.display === "none") {
+    workExperienceInput.style.display = "block";
+  } else {
+    workExperienceInput.style.display = "none";
+  }
 }
