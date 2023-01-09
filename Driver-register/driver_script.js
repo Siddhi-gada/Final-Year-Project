@@ -34,7 +34,7 @@
     var aadharcard = document.forms["registrationForm"]["aadharcard"].value;
     var pancard = document.forms["registrationForm"]["pancard"].value;
     var drivinglicense = document.forms["registrationForm"]["drivinglicense"].value;
-    if (aadharcard == "" && pancard == "" && drivinglicense == "") {
+    if (aadharcard == "" || pancard == "" || drivinglicense == "") {
       alert("ID Proof field is required");
       return false;
     }
@@ -84,5 +84,14 @@ function toggleInput() {
     workExperienceInput.style.display = "block";
   } else {
     workExperienceInput.style.display = "none";
+  }
+}
+
+function CertificateInput() {
+  var certificationInput = document.getElementById("certificationInput");
+  if (certificationInput.style.display === "none") {
+    certificationInput.style.display = "block";
+  } else {
+    certificationInput.style.display = "none";
   }
 }
