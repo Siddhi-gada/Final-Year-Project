@@ -32,25 +32,30 @@
     <!-- Divider -->
     <hr class="sidebar-divider">
 
-    <!-- Heading -->
-    <div class="sidebar-heading">
-        Interface
-    </div>
 
-    <!-- Nav Item - Pages Collapse Menu -->
-    <li class="nav-item">
-        <a class="nav-link" href="../../admin\packages\index.php">
-        <i class=" fas fa-light fa-cubes"></i>
-            <span>Packages</span>
-        </a>
-    </li>
+    <div class="sidebar-heading">
+        Student
+    </div>
     <li class="nav-item">
         <a class="nav-link" href="../../admin\students\index.php">
-        <i class=" fas fa-light fa-cubes"></i>
-            <span>Students</span>
+        <i class="fa-solid fa-person-biking"></i>
+            <span>Students Details</span>
         </a>
     </li>
-
+        <!-- Nav Item - Pages Collapse Menu -->
+        <li class="nav-item">
+        <a class="nav-link" href="../../admin\packages\index.php">
+        <i class="fa-solid fa-note-sticky"></i>
+            <span>Course</span>
+        </a>
+    </li>
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+        <a class="nav-link" href="../../admin\online_courses\online_index.php">
+        <i class="fa-solid fa-note-sticky"></i>
+            <span>Interactive Quiz</span>
+        </a>
+    </li>
     <!-- Nav Item - Utilities Collapse Menu -->
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
@@ -58,7 +63,8 @@
             <i class="fas fa-fw fa-wrench"></i>
             <span>Application</span>
         </a>
-        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+            data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <a class="collapse-item" href="#">Approved Application</a>
                 <a class="collapse-item" href="#">Cancelled Application </a>
@@ -69,44 +75,48 @@
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
             aria-expanded="true" aria-controls="collapsePages">
-            <i class="fas fa-fw fa-folder"></i>
+            <i class="fas fa-credit-card"></i>
             <span>Payments</span>
         </a>
         <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Login Screens:</h6>
-                <a class="collapse-item" href="../login.html">Login</a>
-                <a class="collapse-item" href="../register.html">Register</a>
-                <a class="collapse-item" href="../forgot-password.html">Forgot Password</a>
+                <a class="collapse-item" href="login.html">Login</a>
+                <a class="collapse-item" href="register.html">Register</a>
+                <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
                 <div class="collapse-divider"></div>
                 <h6 class="collapse-header">Other Pages:</h6>
-                <a class="collapse-item" href="../404.html">404 Page</a>
-                <a class="collapse-item" href="../blank.html">Blank Page</a>
+                <a class="collapse-item" href="404.html">404 Page</a>
+                <a class="collapse-item" href="blank.html">Blank Page</a>
             </div>
-        </div>
     </li>
 
     <!-- Nav Item - Charts -->
     <li class="nav-item">
-        <a class="nav-link" href="../charts.html">
-            <i class="fas fa-fw fa-chart-area"></i>
+        <a class="nav-link" href="charts.html">
+        <i class="fas fa-question-circle"></i>
             <span>Enquiry</span></a>
     </li>
-     <!-- Nav Item - Pages Collapse Menu -->
-     <li class="nav-item">
-        <a class="nav-link" href="../admin\packages\index.php">
-        <i class=" fas fa-light fa-cubes"></i>
-            <span>Driver</span>
-        </a>
-    </li>
+
     <!-- Nav Item - Tables -->
     <li class="nav-item">
-        <a class="nav-link" href="../tables.html">
+        <a class="nav-link" href="tables.html">
             <i class="fas fa-fw fa-table"></i>
             <span>Reports</span></a>
     </li>
-    <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">
+
+     <!-- Heading -->
+     <div class="sidebar-heading">
+        Driver
+    </div>
+         <!-- Nav Item - Pages Collapse Menu -->
+         <li class="nav-item">
+        <a class="nav-link" href="../admin\packages\index.php">
+        <i class="fas fa-car"></i>
+            <span>Driver</span>
+        </a>
+    </li>
 
 <!-- Sidebar Toggler (Sidebar) -->
 <div class="text-center d-none d-md-inline">

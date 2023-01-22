@@ -38,7 +38,7 @@ include "../css/sb-admin-2.min.css";
     </script>
     <!-- Custom styles for this template-->
     <link href="../css/sb-admin-2.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="online_courses_style.css">
 
     <?php include('../assets\header-2.php')?>
 
@@ -250,9 +250,7 @@ include "../css/sb-admin-2.min.css";
 
                 <!-- Page Heading -->
                 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                    <h1 class="h3 mb-0 text-gray-800">Courses</h1>
-                    <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                            class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+                    <h1 class="h3 mb-0 text-gray-800">Online Courses</h1>
                 </div>
 
                 <!-- Content Row -->
@@ -264,45 +262,50 @@ include "../css/sb-admin-2.min.css";
                         <!-- row and justify-content-center class is used to place the form in center -->
                         <section class="row justify-content-center">
                             <section class="col-12 col-sm-9 col-md-20">
-                                <form class="form-container" id="form" onsubmit="return validateForm()" enctype="multipart/form-data" action="connect.php" method="post">
+                                <form class="form-container" action="connect.php" method="post">
                                     <div class="form-group">
-                                        <label for="InputTitle">Title</label>
-                                        <input type="text" class="form-control" id="title" aria-describeby=""
-                                            placeholder="Enter Courses Title" name="title">
+                                        <input type="text" class="question-form-control" id="untitle_form" name="untitle_form"
+                                            placeholder="Untitle Form" name="Description">
                                     </div>
                                     <div class="form-group">
-                                        <label for="InputDescription">Description</label>
-                                        <input type="text" class="form-control" id="description"
-                                            placeholder="Enter Courses Description" name="description">
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="InputFees">Fees</label>
-                                        <input type="number" class="form-control" id="Fees"
-                                            placeholder="Enter Courses Fees" name="Fees">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="image">Image</label>
-                                        <input type="file" name="courses_image" id="courses_image">
-                                    </div>
-                                    <div class="flex">
-                                        <div class="form-group col-md-6">
-
-                                            <label for="InputDuration">Start Date Duration</label>
-                                            <input type="date" class="form-control" id="start_date"
-                                                placeholder="Enter Package Duration" name="start_date">
-
+                                        <input type="text" class="question-form-control" name="FirstQuestion" id="FirstQuestion"
+                                            placeholder="Question 1" name="Description">
+                                        <div class="input-radio">
+                                            <input type="radio" id="optionfirst" name="optionfirst" value="firstoptionfirst">
+                                              <input type="text" class="question-form-control" id="firstquestionfirst" name="firstquestionfirst"
+                                                placeholder="Option-1" name="Description">
+                                              <input type="radio" id="optionfirst" name="optionfirst" value="secondoptionfirst">
+                                              <input type="text" class="question-form-control" id="secondquestionfirst" name="secondquestionfirst"
+                                                placeholder="Option-1" name="Description">
+                                              <input type="radio" id="optionfirst" name="optionfirst"
+                                                value="thirdoptionfirst">
+                                            <input type="text" class="question-form-control" id="thirdquestionfirst" name="thirdquestionfirst"
+                                                placeholder="Option-1" name="Description">
                                         </div>
-                                        <div class="form-group col-md-6 ">
 
-                                            <label for="InputDuration">End Date Duration</label>
-                                            <input type="date" class="form-control" id="end_date"
-                                                placeholder="Enter Package Duration" name="end_date">
 
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="question-form-control" name="secondquestion" id="secondquestion"
+                                            placeholder="Question 2" name="Description">
+                                        <div class="input-radio">
+                                            <input type="radio" id="optionsecond" name="optionsecond" value="firstoptionsecond">
+                                              <input type="text" class="question-form-control" id="firstquestionsecond" name="firstquestionsecond"
+                                                placeholder="Option-1" name="Description">
+                                              <input type="radio" id="optionsecond" name="optionsecond" value="secondoptionsecond">
+                                              <input type="text" class="question-form-control" id="secondquestionsecond" name="secondquestionsecond"
+                                                placeholder="Option-1" name="Description">
+                                              <input type="radio" id="optionsecond" name="optionsecond"
+                                                value="thirdoptionsecond">
+                                            <input type="text" class="question-form-control" id="thirdquestionsecond" name="thirdquestionsecond"
+                                                placeholder="Option-1" name="Description">
                                         </div>
+
+
                                     </div>
 
-                                    <button id="submit"  name="submit" type="submit" class="btn btn-primary col-md-4 ">Submit</button>
+
+                                    <button type="submit" class="btn btn-primary col-md-4 ">Submit</button>
                                     <div class="form-footer">
                                     </div>
                                 </form>
@@ -321,7 +324,8 @@ include "../css/sb-admin-2.min.css";
    include('../assets\footer.php');
 
    ?>
-   <script src="course_script.js"></script>
 </body>
 
 </html>
+
+<script src="script.js"></script>

@@ -63,12 +63,12 @@
     }
     var certification = document.forms["registrationForm"]["certification"].value;
     if (certification == "") {
-      alert("Work experience field is required");
+      alert("Certificate field is required");
       return false;
     }
-    var certificate = document.forms["registrationForm"]["certificate"].value;
-    if (certificate == "") {
-      alert("Certificate field is required");
+    var certificationInput = document.forms["registrationForm"]["certificationInput"].value;
+    if (certificationInput == "") {
+      alert("certificationInput field is required");
       return false;
     }
     var profileimage = document.forms["registrationForm"]["profileimage"].value;
@@ -95,3 +95,28 @@ function CertificateInput() {
     certificationInput.style.display = "none";
   }
 }
+
+
+function validateCharactersOnly(input) {
+  if (isNaN(input.value) && !input.value.match(/[^a-zA-Z ]/g)) {
+  return true;
+  } else {
+  // Input is invalid (contains a number)
+  alert("Name should only contain characters (letters)");
+  window.close();
+
+  return false;
+  }
+  }
+  function validateName(input) {
+    if (input.value.match(/^[a-zA-Z]/)) {
+      // Input is valid
+      return true;
+    }
+    else{
+      // Input starts with a number
+      alert("Email id should not start with a number");
+      return true;
+    }
+      return false;
+    }

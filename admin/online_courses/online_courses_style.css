@@ -1,9 +1,6 @@
 .nav-bar{
     margin-top: 20px;
 }
-
-
-
 .navbar-expand .navbar-nav .dropdown-menu {
     position: absolute;
     align-items: center;
@@ -21,3 +18,8 @@
     margin-top: -8px;
     margin-bottom: 20px;
 }
+.input-radio{
+    display: flex;
+}
+
+  

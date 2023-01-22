@@ -213,7 +213,37 @@ include "css/sb-admin-2.min.css";
                     <div class="topbar-divider d-none d-sm-block"></div>
                     <li class=" drop-down ">
                         <!-- Nav Item - User Information -->
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo ucfirst($_SESSION['s_firstname']); ?></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php
+    // Connect to the database
+        $conn = new mysqli('localhost', 'root', '', 'ace_driving_school');
+        
+        // Check for errors
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        }
+        
+        // Retrieve first name from session variable
+        $firstname = $_SESSION['s_firstname'];
+        // Capitalize the first letter
+        $firstname = ucfirst($firstname);
+        
+        
+            // Execute query
+    $result = $conn->query("SELECT * FROM register WHERE firstname = '$firstname'");
+    
+    // Check if query returned any results
+    if (mysqli_num_rows($result) > 0) {
+        while($row = $result->fetch_assoc()) {
+            echo " " . $row["firstname"] . " " . $row["lastname"];
+        }
+    } else {
+        echo "No results found.";
+    }
+
+        
+        // Close connection
+        $conn->close();
+    ?></a>
 <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
