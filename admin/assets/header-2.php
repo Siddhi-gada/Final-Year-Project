@@ -112,9 +112,9 @@
     </div>
          <!-- Nav Item - Pages Collapse Menu -->
          <li class="nav-item">
-        <a class="nav-link" href="../admin\packages\index.php">
+        <a class="nav-link" href="../admin\driver_details\index.php">
         <i class="fas fa-car"></i>
-            <span>Driver</span>
+            <span>Driver Details</span>
         </a>
     </li>
 
