@@ -31,24 +31,49 @@
 
     <!-- Divider -->
     <hr class="sidebar-divider">
-
-
-    <div class="sidebar-heading">
-        Student
-    </div>
     <li class="nav-item">
         <a class="nav-link" href="../../admin\students\index.php">
         <i class="fa-solid fa-person-biking"></i>
             <span>Students Details</span>
         </a>
     </li>
-        <!-- Nav Item - Pages Collapse Menu -->
-        <li class="nav-item">
-        <a class="nav-link" href="../../admin\packages\index.php">
-        <i class="fa-solid fa-note-sticky"></i>
-            <span>Course</span>
+     <!-- Nav Item - Pages Collapse Menu -->
+     <li class="nav-item">
+        <a class="nav-link" href="../../admin\driver_details\index.php">
+        <i class="fas fa-car"></i>
+            <span>Driver Details</span>
         </a>
     </li>
+       <!-- Nav Item - Utilities Collapse Menu -->
+       <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCourse"
+            aria-expanded="true" aria-controls="collapseCourse">
+            <i class="fas fa-fw fa-wrench"></i>
+            <span>Course</span>
+        </a>
+        <div id="collapseCourse" class="collapse" aria-labelledby="headingCourse"
+            data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <a class="collapse-item" href="../../admin\packages\index.php">Add Course</a>
+                <a class="collapse-item" href="../../admin\course_details\index.php">Course Details</a>
+            </div>
+        </div>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCar"
+            aria-expanded="true" aria-controls="collapseCourse">
+            <i class="fas fa-fw fa-wrench"></i>
+            <span>Car</span>
+        </a>
+        <div id="collapseCar" class="collapse" aria-labelledby="headingCar"
+            data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <a class="collapse-item" href="../../admin/Car_details\index.php">Add Car</a>
+                <a class="collapse-item" href="../../admin\course_details\index.php">Car Details</a>
+            </div>
+        </div>
+    </li>
+    
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
         <a class="nav-link" href="../../admin\online_courses\online_index.php">
@@ -63,7 +88,7 @@
             <i class="fas fa-fw fa-wrench"></i>
             <span>Application</span>
         </a>
-        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+        <div id="collapseUtilities" class="collapse" aria-labelledby="headeingApplication"
             data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <a class="collapse-item" href="#">Approved Application</a>
@@ -105,18 +130,6 @@
             <span>Reports</span></a>
     </li>
     <hr class="sidebar-divider d-none d-md-block">
-
-     <!-- Heading -->
-     <div class="sidebar-heading">
-        Driver
-    </div>
-         <!-- Nav Item - Pages Collapse Menu -->
-         <li class="nav-item">
-        <a class="nav-link" href="../admin\driver_details\index.php">
-        <i class="fas fa-car"></i>
-            <span>Driver Details</span>
-        </a>
-    </li>
 
 <!-- Sidebar Toggler (Sidebar) -->
 <div class="text-center d-none d-md-inline">

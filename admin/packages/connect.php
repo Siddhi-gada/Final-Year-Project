@@ -10,7 +10,7 @@ if(isset($_POST["submit"])){
 
     //check if image is uploaded
     if(!empty($_FILES["courses_image"]["name"])){
-        $target_dir = "C:/xampp\htdocs\Main_folder\Final Year Project(3-1-23)\image_profile/";
+        $target_dir = "..\..\image_profile/";
         $target_file = $target_dir . basename($_FILES["courses_image"]["name"]);
         move_uploaded_file($_FILES["courses_image"]["tmp_name"], $target_file);
         $courses_image = $target_file;
