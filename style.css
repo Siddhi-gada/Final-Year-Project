@@ -890,7 +890,7 @@
     /*Mobile Version*/
     
     @media screen and (max-width: 600px) {
-        .logo img {
+        .logo  {
     margin-top: -7vh;
     width: 89%;
     margin-bottom: -5vh;
