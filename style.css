@@ -990,14 +990,13 @@
             display:block;
 }
         .part-3 {
-            margin-left: 7vh;
-            margin-top: 61px;
-            background-color: #4a45c547;
-            width: 56vh;
-            border-radius: 5px;
-            box-shadow: 0px 0px 25px #ccc;
-            padding: 10px;
-        }
+
+    margin: 0px 10%;
+    width: 80%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px #ccc;
+    padding: 10px;
+}
         .part-3-header {
             font-size: 25px;
         }
