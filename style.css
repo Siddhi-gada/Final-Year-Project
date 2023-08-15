@@ -4,8 +4,7 @@
     * {
         margin: 0;
         box-sizing: border-box;
-    }
-    
+    }    
     .menu {
         margin-left: 86vh;
     }
@@ -891,6 +890,11 @@
     /*Mobile Version*/
     
     @media screen and (max-width: 600px) {
+        .logo img {
+            margin-top: -42px;
+            margin-bottom: -52px;
+            width: 23%;
+        }
         .image img {
             height: 63vh;
             width: 100%;
