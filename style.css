@@ -900,20 +900,23 @@
             width: 100%;
             object-fit: cover;
         }
+        .part-1{
+            width:100%;
+        }
         .part {
             display: block;
         }
         .part-1-header {
-            color: darkblue;
-            font-size: 21px;
-            font-weight: 500;
-            margin-left: 81px;
-            margin-top: 20px;
+                color: darkblue;
+    font-size: 21px;
+    font-weight: 500;
+    margin-left: 27vw;
+    margin-top: 20px;
         }
         p {
-            margin-left: 35px;
-            margin-top: 6px;
-            width: 90%;
+           margin-top: 6px;
+    width: 90%;
+    margin-left: 17vw;
         }
         .box-1 {
             display: flex;
