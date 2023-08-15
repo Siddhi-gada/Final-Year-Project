@@ -988,6 +988,9 @@
             font-weight: 500;
             font-family: "Amiri", serif;
         }
+        .part2-container{
+            display:block;
+}
         .part-3 {
             margin-left: 7vh;
             margin-top: 61px;
