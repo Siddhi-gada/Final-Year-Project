@@ -1170,17 +1170,17 @@
         .part5-box {
             display: block;
             background-color: rgba(225, 225, 225, 0.824);
-            padding-bottom: 2%;
+            padding: 6px;
         }
         .part5-box-1 {
             display: block;
-            margin-top: 19px;
-            border: 1px solid #ccc;
-            width: 93%;
-            background-color: white;
-            box-shadow: 0px 0px 10px #ccc;
-            border-radius: 15px;
-            padding-bottom: 2%;
+    border: 1px solid #ccc;
+    width: 93%;
+    background-color: white;
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius: 15px;
+    padding-bottom: 2%;
+    margin: 0 10px 18px;
         }
         .image-box-5 img {
             margin-top: 35%;
