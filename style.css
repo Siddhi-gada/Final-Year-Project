@@ -1217,4 +1217,7 @@
             width: 90%;
             font-family: "Amiri", serif;
         }
+        .footer-box-1 {
+        display: block;
+    }
     }
