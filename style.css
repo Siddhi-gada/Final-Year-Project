@@ -1142,7 +1142,7 @@
         }
         .part4 {
             background-color: rgba(225, 225, 225, 0.824);
-            display: flex;
+            display: block;
         }
         .part4-header {
             color: darkblue;
