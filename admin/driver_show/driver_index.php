@@ -257,8 +257,7 @@ while ($row=mysqli_fetch_array($res))
 {
 echo "<div class='container-1'>";
     echo "<div class='part-1'>";
-        echo "<div>"; ?> <img class="image" src="<?php echo $row ["profileimage"]; ?>" height="250" width="250"> <?php echo "</td>";
-        echo "</div>";
+    echo '<img class="image-1" src="data:image/jpeg;base64,'.base64_encode(file_get_contents($row["profileimage"])).'" height="250" width="250"/>';
         echo "<div class='header'>";
             echo "<div class='profile-details'>Name:</div>";
             echo "<div class='profile-detail'>";
@@ -312,20 +311,44 @@ echo "<div class='container-1'>";
         echo "</div>";  
         echo "</div>";  
         echo "<div class='part-3'>";
-            echo"<div class='part-1-4'>";  
-                echo "<div>"; ?> <img class="image-1" src="<?php echo $row ["aadharcard"]; ?>" height="250" width="250"> <?php echo "</td>";
-                echo"<div class='header-4'>Aadhar Card</div>";
-                echo "</div>";
+        echo"<div class='part-1-4'>";  
+        echo "<div>"; 
+        $path_parts = pathinfo($row["aadharcard"]);
+    if($path_parts['extension'] == "jpg"){
+        echo '<img class="image-1" src="data:image/jpeg;base64,'.base64_encode(file_get_contents($row["aadharcard"])).'" height="250" width="250"/>';
+    } elseif($path_parts['extension'] == "png"){
+        echo '<img class="image-1" src="data:image/png;base64,'.base64_encode(file_get_contents($row["aadharcard"])).'" height="250" width="250"/>';
+    }        echo "</td>";
+        echo"<div class='header-4'>Aadhar Card</div>";
+        echo "</div>";
+    
             echo"</div>";   
             echo"<div class='part-1-4'>";  
-            echo "<div>"; ?> <img class="image-1" src="<?php echo $row ["pancard"]; ?>" height="250" width="250"> <?php echo "</td>";
-            echo"<div class='header-4'>Pan Card</div>";
-            echo "</div>";
+    echo "<div>"; 
+    $path_parts = pathinfo($row["pancard"]);
+if($path_parts['extension'] == "jpg"){
+    echo '<img class="image-1" src="data:image/jpeg;base64,'.base64_encode(file_get_contents($row["pancard"])).'" height="250" width="250"/>';
+} elseif($path_parts['extension'] == "png"){
+    echo '<img class="image-1" src="data:image/png;base64,'.base64_encode(file_get_contents($row["pancard"])).'" height="250" width="250"/>';
+}
+
+    echo "</td>";
+    echo"<div class='header-4'>Pan Card</div>";
+    echo "</div>";
+
         echo"</div>";   
         echo"<div class='part-1-4'>";  
-        echo "<div>"; ?> <img class="image-1" src="<?php echo $row ["drivinglicense"]; ?>" height="250" width="250"> <?php echo "</td>";
+        echo "<div>"; 
+        $path_parts = pathinfo($row["drivinglicense"]);
+        if($path_parts['extension'] == "jpg"){
+            echo '<img class="image-1" src="data:image/jpeg;base64,'.base64_encode(file_get_contents($row["drivinglicense"])).'" height="250" width="250"/>';
+        } elseif($path_parts['extension'] == "png"){
+            echo '<img class="image-1" src="data:image/png;base64,'.base64_encode(file_get_contents($row["drivinglicense"])).'" height="250" width="250"/>';
+        }
+                echo "</td>";
         echo"<div class='header-4'>Driving License</div>";
         echo "</div>";
+    
     echo"</div>";    
         echo "</div>";
         echo "<div class='header'>";
@@ -336,8 +359,8 @@ echo "</div>";
 echo "</div>";
 }
 ?>
-<button id="accept" class="btn-1">Accept</button>
-<button id="reject" class="btn-2">Reject</button>
+<button id="accept" name="accept" class="btn-1">Accept</button>
+<button id="reject" name="reject" class="btn-2">Reject</button>
 </div>
 
                 </div>
@@ -352,6 +375,7 @@ echo "</div>";
    include('../assets\footer.php');
 
    ?>
+   <script src="driver_script.js"></script>
 </body>
 
 </html>

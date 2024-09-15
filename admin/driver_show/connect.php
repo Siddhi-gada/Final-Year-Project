@@ -29,3 +29,4 @@ $phone=mysqli_real_escape_string($conn,$_POST['phone']);
         header('Location: ../../admin/message\update_unsccessful\upadte_unsccessful.html');
     }
 }
+?>
